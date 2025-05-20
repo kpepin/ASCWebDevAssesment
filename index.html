@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin A. Pepín</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Kevin A. Pepín</h1>
+        <p>Software Engineer | Problem Solver | Innovator</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>I'm a senior at Williams College studying Computer Science, driven by curiosity and a passion for
+                building impactful, scalable systems. I’ve interned twice at Amazon, worked on AI-integrated tools, and
+                enjoy applying theoretical foundations to real-world problems.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Amazon – SDE Intern (2024)</h3>
+                <ul>
+                    <li>Built a product page simulator using Python and Streamlit to prototype AI-driven attribute
+                        edits.</li>
+                    <li>Created a search simulation tool using LLMs + Elasticsearch across 6K+ products.</li>
+                    <li>Improved metadata accuracy by 15% and reduced post-deployment testing needs.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Amazon – SDE Intern (2023)</h3>
+                <ul>
+                    <li>Developed Python schema tools to speed up ML pipeline integration for 20+ stakeholders.</li>
+                    <li>Worked with AWS SageMaker, Docker, and Java systems for seamless deployments.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Peer-to-Peer Textbook Marketplace</h3>
+                <p>Designed a Napster-style system with a central directory server and peer communication for efficient
+                    book discovery and trading.</p>
+            </div>
+            <div class="project">
+                <h3>Virtual Memory Manager</h3>
+                <p>Created a virtual memory pager that handled page faults and dynamic allocation for efficient
+                    multi-program support.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:kap6@williams.edu">kap6@williams.edu</a></p>
+            <p>Phone: 347-316-2689</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/kevin-pepín" target="_blank">kevin-pepín</a></p>
+        </section>
+    </main>
+
+    <button id="topBtn" onclick="scrollToTop()">↑ Back to Top</button>
+
+    <footer>
+        <p>© 2025 Kevin A. Pepín</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('topBtn');
+        window.onscroll = () => {
+            btn.style.display = (document.documentElement.scrollTop > 100) ? 'block' : 'none';
+        };
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
